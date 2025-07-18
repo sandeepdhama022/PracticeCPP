@@ -4,22 +4,17 @@
 using namespace std;
 
 int factorial(int number){
-    if ( number > 0 ){
-        int result = number * factorial( number - 1 );
-        cout << result << "\n";
-        return result;;
+    
+    if ( number > 1 ){
+
+        return number * factorial( number - 1 );
+
     } else {
-        return 0;
+        
+        return 1; // last case for 1!
+
     }
 }
-
-/*
-5 - 5 * 4
-4 - 4 * 3
-3 - 3 * 2
-2 - 2 * 1
-1 - 1 * 0
-*/
 
 int main() {
 
